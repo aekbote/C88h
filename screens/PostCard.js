@@ -62,7 +62,7 @@ export default class PostCard extends Component {
                             <Text style={this.state.light_theme ? styles.authorNameTextLight : styles.authorNameText}>{this.props.post.author}</Text>
                         </View>
                     </View>
-                    <Image source={images[post.preview_image]} style={styles.postImage} />
+                    <Image source={images[this.props.route.params.preview_image]} style={styles.postImage} />
                     <View style={styles.captionContainer}>
                         <Text style={styles.captionText}>
                             {post.caption}
