@@ -89,7 +89,7 @@ export default class CreatePost extends Component {
                 <View style={styles.fieldsContainer}>
                     <ScrollView>
                         <Image
-                            source={preview_images[this.state.previewImage]}
+                            source={images[this.props.route.params.preview_image]}
                             style={styles.previewImage}
                         ></Image>
                         <View style={{ height: RFValue(this.state.dropdownHeight) }}>
